@@ -1,331 +1,592 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="utf-8">
-<title>Smart Kids Multi-purpose Free Bootstrap Responsive Template</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="http://webthemez.com" />
-<!-- css -->
-<!--<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="css/jcarousel.css" rel="stylesheet" />
-<link href="css/flexslider.css" rel="stylesheet" />
-<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" />-->
-<link href="https://drive.google.com/uc?export=view&id=1TbE_UtSudi_n65i5mP9Q9iLf2ggIX4zW" rel="stylesheet" />
-<link href="https://drive.google.com/uc?export=view&id=1LuUVaLQkxxaE6FoUdWhxt3w1DWAPW63m" rel="stylesheet">
-<link href="https://drive.google.com/uc?export=view&id=1Qm1wPzJfiJMYVkqZH2C71GDMQ5d8gu4e" rel="stylesheet" />
-<link href="https://drive.google.com/uc?export=view&id=1MQfg_wtfQvFjhQMQppVFc9DYx1uAGurg" rel="stylesheet" />
-<link href="https://drive.google.com/uc?export=view&id=18C58NPlEHMKvANjHViym1Qhhe14yuWno" rel="stylesheet" />
-<link href="https://drive.google.com/uc?export=view&id=1MQfg_wtfQvFjhQMQppVFc9DYx1uAGurg" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Agrawal | CS Faculty Leader & Curriculum Architect</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            slate: {
+              850: '#151f32',
+              950: '#0a0f1d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    .academic-card {
+      transition: all 0.2s ease-in-out;
+      border: 1px solid #e2e8f0;
+    }
+    .academic-card:hover {
+      border-color: #2563eb;
+      box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.08);
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
-<body>
-<div id="wrapper">
-	<!-- start header -->
-	<header>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="https://drive.google.com/uc?export=view&id=1Pgx8YTi-Mdx8UOb4_OKsPlonV3bGOif3" height="50" width="150" alt="logo"/></a>
-                </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="courses.html">Courses</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	</header>
-	<!-- end header -->
-	<section id="featured"></section>
-	<!-- Slider -->
-	<div id="main-slider" class="flexslider">
-		<ul class="slides">
-		  <li>
-			<img src="https://drive.google.com/uc?export=view&id=1o8awHCcCIgqJhjQJ0OH8OwtwHBwcVruV" alt=""/>
-			<div class="flex-caption">
-			   <div class="item_introtext"> 
-				<strong>Make Your Kids Future Ready </strong>
-				<p>The best one on one learning platform</p> </div>
-			</div>
-		  </li>
-		  <li>
-			<img src="https://drive.google.com/uc?export=view&id=1QMPvv_RObnLCHyVK9IWBGXndcMxE-F-A" alt=""/>
-			<div class="flex-caption">
-				 <div class="item_introtext"> 
-				<strong>All-round Growth</strong>
-				<p>We teach with very friendly and gamified way</p> </div>
-			</div>
-		  </li>
-		  <li>
-			<img src="https://drive.google.com/uc?export=view&id=1mTJeS3BX0ZO2BNTnHoKbn8j-81bLLwca" alt=""/>
-			<div class="flex-caption">
-				 <div class="item_introtext"> 
-				<strong>We Develop Logical Thinking</strong>
-				<p>Children can convert any idea into a live project by codi   ng</p> </div>
-			</div>
-		  </li>
-		</ul>
-	</div>
-<!-- end slider -->
-	
-	 
-	</section>
-	<section class="hero-text">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="aligncenter"><h1 class="aligncenter">
-					Smart Kids...Future of India</h1><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;"></span>
-					All the courses of Coding Cola are created and designed specially for kids and teenagers. These all courses are 
-								focusing the current trends and technologies. We teach practical and belive in practicing and learning.</div>
-			</div>
-		</div>
-	</div>
-	</section>
-	<section id="content">
-	
-	
-	<div class="container">
-			<div class="row">
-		<div class="skill-home"> <div class="skill-home-solid clearfix"> 
-		<div class="col-md-3 text-center">
-		<span class="icons c1"><i class="fa fa-trophy"></i></span> <div class="box-area">
-		<h3>Web Development</h3> <p></p></div>
-		</div>
-		<div class="col-md-3 text-center"> 
-		<span class="icons c2"><i class="fa fa-picture-o"></i></span> <div class="box-area">
-		<h3>UI Design</h3> <p></p></div>
-		</div>
-		<div class="col-md-3 text-center"> 
-		<span class="icons c3"><i class="fa fa-desktop"></i></span> <div class="box-area">
-		<h3>Interaction</h3> <p></p></div>
-		</div>
-		<div class="col-md-3 text-center"> 
-		<span class="icons c4"><i class="fa fa-globe"></i></span> <div class="box-area">
-		<h3>User Experiance</h3> <p></p>
-		</div></div>
-		</div></div>
-		</div> 
-		 
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen flex flex-col justify-between">
 
-	</div>
-	</section>
-	<div class="testimonial-area">
-    <div class="testimonial-solid">
-        <div class="container">
-            <div class="testi-icon-area">
-                <div class="quote">
-                    <i class="fa fa-microphone"></i>
-                </div>
-            </div>
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="">
-                        <a href="#"></a>
-                    </li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1" class="">
-                        <a href="#"></a>
-                    </li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2" class="active">
-                        <a href="#"></a>
-                    </li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3" class="">
-                        <a href="#"></a>
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item">
-                        <p>Coding is today's language of creativity. All our children deserve a chance to become creators instead consumers of computer science.</p>
-                        <p>
-                            <b>-  Maria Klawe -</b>
-                        </p>
-                    </div>
-                    <div class="item">
-                        <p>"Everybody should learn to program a computer, because it teaches you how to think." </p>
-                        <p>
-                            <b>- STEVE JOBS -</b>
-                        </p>
-                    </div>
-                    <div class="item active">
-                        <p>"Learning to write programs stretches your mind, and helps you think better" </p>
-                        <p>
-                            <b>- BILL GATES -</b>
-                        </p>
-                    </div>
-                    <div class="item">
-                        <p>"I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12." </p>
-                        <p>
-                            <b>- ELON MUSK -</b>
-                        </p>
-                    </div>
-                </div>
-            </div>
+  <!-- Top Institutional Header -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Accreditation -->
+      <a href="#" class="flex items-center gap-3 shrink-0">
+        <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center font-mono font-bold text-base shadow-sm">
+          RA
         </div>
+        <div>
+          <span class="block font-bold text-slate-900 leading-snug tracking-tight text-base">Rahul Agrawal</span>
+          <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wide">Computer Science Educator</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="hidden md:flex items-center gap-1.5 text-sm font-medium text-slate-600">
+        <button onclick="navigateToTab('leadership')" id="nav-leadership" class="tab-btn px-4 py-2 rounded-lg text-brand-700 bg-brand-50 font-semibold transition">Experience</button>
+        <button onclick="navigateToTab('credentials')" id="nav-credentials" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Qualifications</button>
+        <button onclick="navigateToTab('vision')" id="nav-vision" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Vision</button>
+        <button onclick="navigateToTab('contact')" id="nav-contact" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Contact</button>
+      </div>
+
+      <!-- Action Button -->
+      <div class="hidden md:block shrink-0">
+        <button onclick="openModal('resume')" class="px-5 py-2.5 text-xs font-semibold uppercase tracking-wider bg-slate-900 hover:bg-brand-700 text-white rounded-xl transition shadow-sm flex items-center gap-2">
+          <span>Curriculum Vitae</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button 
+        id="mobile-menu-btn" 
+        onclick="toggleMobileMenu()" 
+        type="button"
+        class="md:hidden inline-flex items-center justify-center p-2.5 rounded-xl text-slate-700 bg-slate-100 hover:bg-slate-200 focus:outline-none transition border border-slate-200"
+        aria-label="Toggle navigation menu"
+      >
+        <svg id="menu-icon" class="w-6 h-6 stroke-current text-slate-800" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 stroke-current text-slate-800 hidden" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
     </div>
-</div>
-<section class="course"> 
 
-	<div class="row">
-		<div class="col-lg-12">
-			<div class=""><h3>Our Courses</h3><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;">
-			</span>All the courses of Coding Cola are created and designed specially for kids and teenagers. These all courses are 
-		focusing the current trends and technologies. We teach practical and belive in practicing and learning.
-		<p>These courses are specially designed for kids (Grade 5 to 8) to teach them how the smart devices are functioning and
-			how the games and animation are working. Students will learn how to frame any problem and solve with coding.
-			Students will learn how to frame and design anything using HTML, CSS, JavaScript.</p>
-		</div>
-		</div>
-	</div>
-<div class="row">
-		<div class="col-md-4">
-		<div class="textbox clour1">
-			<h3>Block Coding (Coding for Kids)</h3>
-			
-		</div> <img class="img-responsive" src="https://drive.google.com/uc?export=view&id=1tksM-LwXU1wgCDvJ2EFMLR8MWBnmHZ8Y" alt="" style="width: 100%;">
-	</div>
-		<div class="col-md-4">
-		<div class="textbox clour2">
-			  <h3>Web Designing</h3>
-			 
-		</div> <img class="img-responsive" src="https://drive.google.com/uc?export=view&id=1ZYGwNdpbKEM_iV1oFm6NHx9cLQBLBPfi" alt="" style="width: 100%;">
-	</div>
-		<div class="col-md-4">
-		<div class="textbox clour3">
-			  <h3>MS Office (For Professonals)</h3>
-			
-		</div> <img class="img-responsive" src="https://drive.google.com/uc?export=view&id=1ynUPOZ3m-oFEBAp-KZFU_fZI-7fqP_67" alt="" style="width: 100%;">
-	</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4">
-		<div class="textbox clour4">
-			<h3>Video Editing</h3>
-			
-		</div> <img class="img-responsive" src="https://drive.google.com/uc?export=view&id=1P2vKSTKZ8YaxKnA3_1IkDY7cjdAoxLRe" alt="" style="width: 100%;">
-	</div>
-		<div class="col-md-4">
-		<div class="textbox clour5">
-			  <h3>Game and App Development</h3>
-		
-		</div> <img class="img-responsive" src="https://drive.google.com/uc?export=view&id=1hzGgjaHOKZ9K_HK9YghEpRrxX2AI7_Fs" alt="" style="width: 100%;">
-	</div>
-		<div class="col-md-4">
-		<div class="textbox clour6">
-			  <h3>Codomg With Minecraft</h3>
-			<p></p>
-		</div> 
-		<img class="img-responsive" src="https://drive.google.com/uc?export=view&id=1hHAX58g9IN4-gUSkxeWIEF1ZUZzMNRE_" alt="" style="width: 100%;">
-	</div>
-	</div>
-</section>	  
-</div>
-</section>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">Our Contact</h5>
-					<address>
-					<strong>Coding Cola</strong><br>
-					Deri Road, Near Lakshya Public School<br>
-					Panchvati Colony <br>
-					 Pin-714001 Chhatarpur M.P.
-					</address>
-					<p>
-						<i class="icon-phone"></i> 8120889096 <br>
-						<i class="icon-envelope-alt"></i> rahulcikv@gmail.com
-					</p>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">Quick Links</h5>
-					<ul class="link-list">
-						<li><a href="https://www.youtube.com/digitalshalark" target="_blank">Our YouTube Channel</a></li>
-						<li><a href="Contact.html">Contact us</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">New Batch</h5>
-					<ul class="link-list">
-						<li><a href="#">Complete Office Solution</a></li>
-						<li><a href="#">Web Design Basics</a></li>
-						<li><a href="#">Knowing Computers</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3">
-					<div class="widget">
-					<h5 class="widgetheading">On Going Batch</h5>
-					<ul class="link-list">
-						<li><a href="#">Free YouTube Videos</a></li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p>
-							<span>&copy; CodingCola All right reserved. </span>
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<li><a href="https://www.facebook.com/people/Rahul-Agrawal/100006946905407/" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/WRahulAgrawal" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://www.instagram.com/wrahulagrawal/" data-placement="top" title="instagram"><i class="fa fa-instagram"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	</footer>
-</div>
-<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<!-- javascript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-6 py-5 space-y-3 text-sm shadow-xl font-medium">
+      <button onclick="navigateToTab('leadership'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Experience</button>
+      <button onclick="navigateToTab('credentials'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Qualifications</button>
+      <button onclick="navigateToTab('vision'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Vision</button>
+      <button onclick="navigateToTab('contact'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Contact</button>
+      
+      <div class="pt-3 border-t border-slate-100">
+        <button onclick="openModal('resume'); toggleMobileMenu()" class="w-full text-center py-2.5 bg-slate-900 hover:bg-brand-700 text-white rounded-xl text-xs font-semibold tracking-wide">
+          Open Executive Resume
+        </button>
+      </div>
+    </div>
+  </nav>
 
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
-<script src="js/Gallery/jquery.quicksand.js"></script>
-<script src="js/Gallery/setting.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/animate.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/owl-carousel/owl.carousel.js"></script>
+  <!-- Hero Section -->
+  <header class="max-w-7xl mx-auto px-6 pt-14 pb-12 w-full">
+    <div class="grid md:grid-cols-12 gap-10 lg:gap-14 items-center">
+      
+      <!-- Bio Details -->
+      <div class="md:col-span-8 space-y-6 order-2 md:order-1">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-50 border border-brand-100 text-brand-700">
+          <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+          CBSE Lead CS Educator | K–12 Python & AI Specialist | NEP 2020 Aligned
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+          Empowering Next-Gen Minds Through  <span class="text-brand-600">Computer Science</span>
+        </h1>
+
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+        Hi, I'm Rahul Agrawal. I specialize in transforming school computer education from rote software tutorials into experiential computational thinking.
+        Over the past 5+ years across reputed CBSE classrooms and EdTech platforms, I have built practical learning tracks that take learners seamlessly 
+        from visual logic (Scratch) to structured Python, web technologies, and foundational AI—backed by active lab management and faculty enablement.
+        </p>
+
+        <!-- Metric Boxes -->
+        <div class="grid grid-cols-3 gap-4 pt-2 font-mono">
+          <div class="neon-card bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+            <span class="block text-2xl font-bold text-slate-900">5+ Yrs</span>
+            <span class="text-xs text-slate-500 font-sans mt-0.5 block">CBSE Instruction</span>
+          </div>
+          
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+            <span class="block text-2xl font-bold text-brand-600">100%</span>
+            <span class="text-xs text-slate-500 font-sans mt-0.5 block">NEP Alignment & Practical Learning</span>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+            <span class="block text-2xl font-bold text-brand-600">1:1 Focus</span>
+            <span class="text-xs text-slate-500 font-sans mt-0.5 block">Diagnostic Mentorship</span>
+          </div>
+        </div>
+
+        <!-- Direct Actions -->
+        <div class="pt-2 flex flex-wrap gap-3.5 text-sm font-medium">
+          <button onclick="openModal('resume')" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-xl shadow-sm transition flex items-center gap-2">
+            <span>View Academic Profile</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+          <a href="mailto:rahul.agrawal@example.com" class="px-6 py-3 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-xl transition flex items-center gap-2">
+            <span>Inquire for Faculty / Leadership Roles</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Photo -->
+      <div class="md:col-span-4 flex flex-col items-center justify-center order-1 md:order-2 gap-5">
+        <div class="relative">
+          <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl bg-slate-200">
+            <img 
+              src="Rahul Agrawal.png" 
+              alt="Rahul Agrawal" 
+              class="w-full h-full object-cover object-top"
+              onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'"
+            />
+          </div>
+          
+          <div class="absolute bottom-3 right-3 bg-white border border-slate-200 text-slate-800 rounded-full px-3.5 py-1 text-xs font-mono font-bold shadow-md whitespace-nowrap">
+            BCA • M.Sc. (CS) • B.Ed.
+          </div>
+            
+        </div>
+        <!-- Connect / Professional Network Strip -->
+        <div class="flex items-center gap-2 bg-white border border-slate-200 rounded-xl px-4 py-2 shadow-sm text-xs font-mono">
+          <span class="text-slate-400 font-sans font-semibold mr-1">Connect:</span>
+          
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="px-2 py-1 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition font-medium flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 fill-current text-blue-600" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <span class="text-slate-300">•</span>
+
+          <a href="https://github.com" target="_blank" rel="noopener" class="px-2 py-1 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition font-medium flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 fill-current text-slate-700" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+            <span>GitHub</span>
+          </a>
+
+          <span class="text-slate-300">•</span>
+
+          <a href="mailto:rahul.agrawal@example.com" class="px-2 py-1 rounded-lg text-slate-700 hover:text-emerald-600 hover:bg-slate-50 transition font-medium flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 fill-none stroke-current text-emerald-600" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <!-- Interactive Executive Portal -->
+  <section id="frame-viewport" class="scroll-mt-24 max-w-7xl mx-auto px-6 py-8 w-full">
+    <div class="bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
+      
+      <!-- Frame Header -->
+      <div class="bg-slate-900 px-6 py-4 flex items-center justify-between border-b border-slate-800">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+          <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+          <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+          <span id="active-tab-title" class="ml-3 font-mono text-xs text-brand-100 font-semibold tracking-wide">
+            PORTAL // TEACHING TENURE & RESPONSIBILITIES
+          </span>
+        </div>
+        <div class="text-xs font-mono text-slate-400 hidden sm:block">
+          Faculty Dossier & Architecture
+        </div>
+      </div>
+
+      <!-- Frame Body -->
+      <div class="p-6 sm:p-10 min-h-[420px]">
+        
+        <!-- Tab 1: Experience -->
+        <div id="content-leadership" class="tab-pane space-y-6">
+          <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Institutional Appointments & Impact</h2>
+            <p class="text-sm text-slate-500 mt-1">Classroom instruction, lab management, and educational technology leadership.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="academic-card p-6 bg-slate-50 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-1 rounded">Specialized Instruction</span>
+              <h3 class="text-base font-bold text-slate-900 mt-3">Codingal Technologies</h3>
+              <p class="text-xs text-slate-500 font-medium">Coding Instructor</p>
+              <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside leading-relaxed">
+                <li>Conducted 1:1 and group classes with structured lession plan.</li>
+                <li>Taught foundational block-based programming (Scratch, Code.org, pictoblocx) and text-based HTML, Python etc. </li>
+                <li>Achieved consistent 95%+ student retention and completion rates.</li>
+              </ul>
+            </div>
+
+            <div class="academic-card p-6 bg-slate-50 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-slate-700 bg-slate-200 border border-slate-300 px-2 py-1 rounded">Institutional Leadership</span>
+              <h3 class="text-base font-bold text-slate-900 mt-3">Departmental Operations</h3>
+              <p class="text-xs text-slate-500 font-medium">Lab & Academic Administration</p>
+              <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside leading-relaxed">
+                <li>Manages safe campus networking and digital device protocols.</li>
+                <li>Conducts internal teacher enablement for EdTech tools.</li>
+                <li>Designs formative and summative diagnostic assessments.</li>
+              </ul>
+            </div>
+
+            <div class="academic-card p-6 bg-slate-50 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-2 py-1 rounded">Head of Examination Department</span>
+              <h3 class="text-base font-bold text-slate-900 mt-3">Birla Open Minds International School, Ambikapur</h3>
+              <p class="text-xs text-slate-500 font-medium">TGT Computer Science </p>
+              <p class="text-xs text-slate-500 font-medium">Classes Taught 5-8 </p>
+              <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside leading-relaxed">
+                <li>Led the Examination Department and assist the principal with academic planning and curriculum oversight. </li>
+                <li>Maintained a safe, supportive, and disciplined school environment. </li>
+                <li>Coordinated school activities and daily academic operations.</li>
+                <li>Founded an ICT & STEM Club and conducted weekly coding sessions. </li>
+                <li>Facilitates lessons with multidisciplinary approach as per NEP 2020.</li>
+                <li>Supervises school computer laboratories and student digital readiness.</li>
+                <li>Mentors students for science & technology exhibitions.</li>
+              </ul>
+            </div>
+
+            <div class="academic-card p-6 bg-slate-50 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-2 py-1 rounded">Faculty Member</span>
+              <h3 class="text-base font-bold text-slate-900 mt-3">PM SHRI Kendriya Vidyalaya, Chhatarpur</h3>
+              <p class="text-xs text-slate-500 font-medium">TGT Computer Instructor </p>
+              <p class="text-xs text-slate-500 font-medium">Classes Taught 3-10 </p>
+              <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside leading-relaxed">
+                <li>Designed engaging ICT, Coding, and AI lessons aligned with CBSE and NEP 2020.  </li>
+                <li>Assessed students through labs and projects, providing feedback to strengthen practical skills.  </li>
+                <li>Coordinated school activities and daily academic operations.</li>
+                <li>Created a positive, engaging classroom that encouraged participation and effective learning.  </li>
+                <li>Supervise student projects and assignments related to computer science. </li>
+                <li>Founded an ICT Club and conduct weekly skill improvement sessions.  </li>
+                <li>Mentors students for AI Models.</li>
+              </ul>
+            </div>
+
+            <div class="academic-card p-6 bg-slate-50 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-1 rounded">Intern (Offline Classes) </span>
+              <h3 class="text-base font-bold text-slate-900 mt-3">Maharishi Vidya Mandir, Deri Road Chhatarpur </h3>
+              <p class="text-xs text-slate-500 font-medium">TGT Computer Science</p>
+              <p class="text-xs text-slate-500 font-medium">Classes Taught 3-10 </p>
+              <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside leading-relaxed">
+                <li>Designs formative and summative diagnostic assessments.</li>
+                <li>Taught foundational Python syntax and block-based game engines.</li>
+                <li>Learned how to focus on each student in a group classroom</li>
+              </ul>
+            </div>
+
+            <div class="academic-card p-6 bg-slate-50 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-slate-700 bg-slate-200 border border-slate-300 px-2 py-1 rounded">Intern (Online Classes) </span>
+              <h3 class="text-base font-bold text-slate-900 mt-3">Unacademy</h3>
+              <p class="text-xs text-slate-500 font-medium">Special Class Educator</p>
+              <p class="text-xs text-slate-500 font-medium">Classes Taught 11-12 </p>
+              <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside leading-relaxed">
+                <li>Conducting online gruop calsses .</li>
+                <li>Focuses on learner engagement.</li>
+                <li>Focus on board classes.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab 2: CURRICULUM & PEDAGOGY -->
+        <div id="content-curriculum" class="tab-pane hidden space-y-6">
+          <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Structured Pedagogical Framework</h2>
+            <p class="text-sm text-slate-500 mt-1">A scaffolded, 3-phase curriculum designed to move learners from visual intuition to production syntax.</p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-xl border border-slate-200">
+              <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 font-mono font-bold text-sm flex items-center justify-center mb-3">01</div>
+              <h3 class="font-bold text-slate-900 text-base">Visual Logic & Tracing</h3>
+              <p class="text-xs font-semibold text-slate-500 mt-0.5">Primary & Middle Grades</p>
+              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                Eliminates syntax intimidation through block-based frameworks (Scratch, PictoBlocks). Introduces state management, loops, and modular algorithmic flowcharts.
+              </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl border border-slate-200">
+              <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-700 font-mono font-bold text-sm flex items-center justify-center mb-3">02</div>
+              <h3 class="font-bold text-slate-900 text-base">Structured Python & Data</h3>
+              <p class="text-xs font-semibold text-slate-500 mt-0.5">Middle to Secondary Grades</p>
+              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                Translates logic models into clean, PEP-8 compliant Python. Emphasizes lists, dictionaries, conditionals, file handling, and terminal problem-solving.
+              </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl border border-slate-200">
+              <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 font-mono font-bold text-sm flex items-center justify-center mb-3">03</div>
+              <h3 class="font-bold text-slate-900 text-base">Web Development & AI Foundations</h3>
+              <p class="text-xs font-semibold text-slate-500 mt-0.5">Senior Secondary & Capstone</p>
+              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                Hands-on HTML5/CSS3 layout design, basic DOM scripting, machine learning concepts, and critical digital citizenship and safety principles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: CREDENTIALS -->
+        <div id="content-credentials" class="tab-pane hidden space-y-6">
+          <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Academic Degrees & Professional Certifications</h2>
+            <p class="text-sm text-slate-500 mt-1">Formal qualifications verified for CBSE and institutional regulatory compliance.</p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">🎓</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Master of Science: Computer Science (M.Sc. CS)</h4>
+                <p class="text-xs text-slate-500 mt-1">Post-graduate level mastery of computational theory, database architecture, and network engineering.</p>
+              </div>
+            </div>
+
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">💡</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Google & EdTech Certified</h4>
+                <p class="text-xs text-slate-500 mt-1">Classroom digital tools, cloud workflows, and pedagogical integrations for hybrid classrooms.</p>
+              </div>
+            </div>
+
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">🛡️</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">POSH & Student Safeguarding</h4>
+                <p class="text-xs text-slate-500 mt-1">Compliant with institutional conduct standards, child safety frameworks, and lab ergonomics.</p>
+              </div>
+            </div>
+
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">📑</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Curriculum & Manuscript Review</h4>
+                <p class="text-xs text-slate-500 mt-1">Experience assessing K-8 computer science textbooks for pedagogical rigor and NEP compliance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: NEP 2020 VISION -->
+        <div id="content-vision" class="tab-pane hidden space-y-6">
+          <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Alignment with National Education Policy (NEP 2020)</h2>
+            <p class="text-sm text-slate-500 mt-1">Transforming K-12 CS education from rote learning to experiential problem solving.</p>
+          </div>
+
+          <div class="space-y-4 max-w-4xl text-sm text-slate-600 leading-relaxed">
+            <p>
+              Under NEP 2020 guidelines, Computer Science must transition from basic typing software tutorials into a foundational pillar of <strong>computational thinking</strong>. My pedagogical approach anchors around three commitments:
+            </p>
+            <div class="grid sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                <span class="font-bold text-slate-900 block mb-1">Experiential Practicals</span>
+                <span class="text-xs">Prioritizing 70% lab-driven project exploration over memorization of definitions.</span>
+              </div>
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                <span class="font-bold text-slate-900 block mb-1">Ethical AI Literacy</span>
+                <span class="text-xs">Demystifying machine learning concepts early while emphasizing data privacy and cyber ethics.</span>
+              </div>
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                <span class="font-bold text-slate-900 block mb-1">Cross-Disciplinary Integration</span>
+                <span class="text-xs">Linking code logic directly to science and math concepts taught in core classrooms.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 5: CONTACT -->
+        <div id="content-contact" class="tab-pane hidden space-y-6">
+          <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Institutional & Recruiter Inquiries</h2>
+            <p class="text-sm text-slate-500 mt-1">Open to Senior CS Educator, HOD Computer Science, and Curriculum Consultancy opportunities.</p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4 max-w-3xl">
+            <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider block">Institutional Email</span>
+              <a href="mailto:rahul.agrawal@example.com" class="text-base font-bold text-brand-600 hover:underline block mt-2">
+                rahul.agrawal@example.com
+              </a>
+              <p class="text-xs text-slate-500 mt-1">Available for school interviews and demo class coordination.</p>
+            </div>
+
+            <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl">
+              <span class="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider block">Professional Networking</span>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="text-base font-bold text-brand-600 hover:underline block mt-2">
+                linkedin.com/in/rahul-agrawal
+              </a>
+              <p class="text-xs text-slate-500 mt-1">Connect for academic references and credentials.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Modal Component -->
+  <div id="frameModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white border border-slate-200 w-full max-w-3xl max-h-[85vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden">
+      
+      <!-- Top Bar -->
+      <div class="bg-slate-900 px-6 py-4 flex items-center justify-between">
+        <span class="font-mono text-xs text-white font-semibold tracking-wider">
+          ACADEMIC DOSSIER // RAHUL_AGRAWAL_CV.PDF
+        </span>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-white font-mono text-xs px-2.5 py-1 rounded bg-slate-800 transition">
+          ✕ Close
+        </button>
+      </div>
+
+      <!-- CV Body -->
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-6 text-sm">
+        <div class="border-b border-slate-200 pb-5 flex justify-between items-start">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Rahul Agrawal</h3>
+            <p class="text-xs font-mono text-brand-600 font-semibold mt-0.5">Master of Science in Computer Science (M.Sc. CS)</p>
+            <p class="text-xs text-slate-500 mt-1">Lead CS Educator & Academic Specialist</p>
+          </div>
+          <a href="resume.pdf" download class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-semibold shadow-sm transition">
+            Download PDF
+          </a>
+        </div>
+
+        <div class="space-y-4 text-xs leading-relaxed text-slate-600">
+          <div>
+            <h4 class="font-bold text-slate-900 uppercase font-mono tracking-wider mb-1">Executive Summary</h4>
+            <p>Computer Science Educator with 5+ years of experience across CBSE schools. Specialized in NEP 2020 curriculum development, computer lab administration, and interactive coding instruction across middle and secondary divisions.</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 uppercase font-mono tracking-wider mb-2">Teaching History</h4>
+            <div class="space-y-2">
+              <div>
+                <span class="font-bold text-slate-900">Computer Science Faculty</span> — Birla Open Minds International School
+                <p class="text-slate-500">Delivered CBSE curriculum, managed 40+ system IT laboratory, organized coding challenges.</p>
+              </div>
+              <div>
+                <span class="font-bold text-slate-900">Senior Coding Instructor</span> — Codingal Technologies
+                <p class="text-slate-500">Conducted specialized 1:1 programming sessions in Python, Scratch, and computational logic.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 uppercase font-mono tracking-wider mb-1">Technical Disciplines</h4>
+            <p class="text-slate-700 font-mono">Python, Scratch, HTML5/CSS3, SQL Basics, Computational Thinking, ICT Security.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs font-mono text-slate-500 mt-10">
+    © Rahul Agrawal, M.Sc. (CS) • Lead Computer Science Educator • Hosted on GitHub Pages
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function switchTab(tabKey) {
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
+
+      const target = document.getElementById('content-' + tabKey);
+      if (target) {
+        target.classList.remove('hidden');
+      }
+
+      const titles = {
+        'leadership': 'PORTAL // INSTITUTIONAL TENURE & APPOINTMENTS',
+        'curriculum': 'PORTAL // CURRICULUM ARCHITECTURE & NEP PEDAGOGY',
+        'credentials': 'PORTAL // ACADEMIC QUALIFICATIONS & CERTIFICATIONS',
+        'vision': 'PORTAL // NEP 2020 VISION & IMPLEMENTATION',
+        'contact': 'PORTAL // INSTITUTIONAL INQUIRIES & CONTACT'
+      };
+      document.getElementById('active-tab-title').innerText = titles[tabKey] || 'PORTAL VIEW';
+
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('text-brand-700', 'bg-brand-50', 'font-semibold');
+        b.classList.add('text-slate-600');
+      });
+
+      const activeBtn = document.getElementById('nav-' + tabKey);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-slate-600');
+        activeBtn.classList.add('text-brand-700', 'bg-brand-50', 'font-semibold');
+      }
+    }
+
+    function openModal(viewId) {
+      document.getElementById('frameModal').classList.remove('hidden');
+      document.getElementById('frameModal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('frameModal').classList.add('hidden');
+      document.getElementById('frameModal').classList.remove('flex');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      if (menu && menuIcon && closeIcon) {
+        menu.classList.toggle('hidden');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      }
+    }
+
+    function navigateToTab(tabKey) {
+      switchTab(tabKey);
+      const viewport = document.getElementById('frame-viewport');
+      if (viewport) {
+        viewport.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+
 </body>
 </html>
