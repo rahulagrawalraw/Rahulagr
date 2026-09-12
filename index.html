@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rahul Agrawal | CS Faculty Leader & Curriculum Architect</title>
+  <title>Rahul Agrawal | Computer Science Educator & Curriculum Architect</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -51,6 +51,16 @@
       box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.08);
       transform: translateY(-2px);
     }
+    /* Neon Glow Hover Ring (Style like 183) */
+    .neon-glow-card {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid #e2e8f0;
+    }
+    .neon-glow-card:hover {
+      border-color: #2563eb !important;
+      box-shadow: 0 10px 25px -4px rgba(37, 99, 235, 0.18), 0 0 16px 2px rgba(59, 130, 246, 0.25);
+      transform: translateY(-3px);
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen flex flex-col justify-between">
@@ -73,7 +83,8 @@
       <!-- Desktop Navigation Menu -->
       <div class="hidden md:flex items-center gap-1.5 text-sm font-medium text-slate-600">
         <button onclick="navigateToTab('leadership')" id="nav-leadership" class="tab-btn px-4 py-2 rounded-lg text-brand-700 bg-brand-50 font-semibold transition">Experience</button>
-        <button onclick="navigateToTab('credentials')" id="nav-credentials" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Qualifications</button>
+        <button onclick="navigateToTab('expertise')" id="nav-expertise" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Expertise</button>
+        <button onclick="navigateToTab('qualification')" id="nav-qualification" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Qualifications</button>
         <button onclick="navigateToTab('vision')" id="nav-vision" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Vision</button>
         <button onclick="navigateToTab('contact')" id="nav-contact" class="tab-btn px-4 py-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition">Contact</button>
       </div>
@@ -106,7 +117,8 @@
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-6 py-5 space-y-3 text-sm shadow-xl font-medium">
       <button onclick="navigateToTab('leadership'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Experience</button>
-      <button onclick="navigateToTab('credentials'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Qualifications</button>
+      <button onclick="navigateToTab('expertise'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Expertise</button>
+      <button onclick="navigateToTab('qualification'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Qualifications</button>
       <button onclick="navigateToTab('vision'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Vision</button>
       <button onclick="navigateToTab('contact'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-slate-700 hover:text-brand-600">Contact</button>
       
@@ -130,7 +142,7 @@
         </div>
 
         <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-          Empowering Next-Gen Minds Through  <span class="text-brand-600">Computer Science</span>
+          Empowering Next-Gen Minds Through <span class="text-brand-600">Computer Science</span>
         </h1>
 
         <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -162,7 +174,7 @@
             <span>View Academic Profile</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
           </button>
-          <a href="mailto:rahul.agrawal@example.com" class="px-6 py-3 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-xl transition flex items-center gap-2">
+          <a href="mailto:rahulcikv@gmail.com" class="px-6 py-3 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-xl transition flex items-center gap-2">
             <span>Inquire for Faculty / Leadership Roles</span>
           </a>
         </div>
@@ -175,7 +187,9 @@
             <img 
               src="Rahul Agrawal.png" 
               alt="Rahul Agrawal" 
-              class="w-full h-full object-cover object-top"/>
+              class="w-full h-full object-cover object-top"
+              
+            />
           </div>
           
           <div class="absolute bottom-3 right-3 bg-white border border-slate-200 text-slate-800 rounded-full px-3.5 py-1 text-xs font-mono font-bold shadow-md whitespace-nowrap">
@@ -194,14 +208,16 @@
 
           <span class="text-slate-300">•</span>
 
-          <a href="https://github.com" target="_blank" rel="noopener" class="px-2 py-1 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition font-medium flex items-center gap-1">
-            <svg class="w-3.5 h-3.5 fill-current text-slate-700" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-            <span>GitHub</span>
+          <a href="https://youtube.com/@DigitalShalaRK" target="_blank" rel="noopener" class="px-2 py-1 rounded-lg text-slate-700 hover:text-red-600 hover:bg-slate-50 transition font-medium flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 fill-current text-red-600" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>YouTube</span>
           </a>
 
           <span class="text-slate-300">•</span>
 
-          <a href="mailto:rahul.agrawal@example.com" class="px-2 py-1 rounded-lg text-slate-700 hover:text-emerald-600 hover:bg-slate-50 transition font-medium flex items-center gap-1">
+          <a href="mailto:rahulcikv@gmail.com" class="px-2 py-1 rounded-lg text-slate-700 hover:text-emerald-600 hover:bg-slate-50 transition font-medium flex items-center gap-1">
             <svg class="w-3.5 h-3.5 fill-none stroke-current text-emerald-600" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             <span>Email</span>
           </a>
@@ -269,7 +285,7 @@
               <p class="text-xs text-slate-500 font-medium">TGT Computer Science </p>
               <p class="text-xs text-slate-500 font-medium">Classes Taught 5-8 </p>
               <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside leading-relaxed">
-                <li>Led the Examination Department and assist the principal with academic planning and curriculum oversight. </li>
+                <li>Led the Examination Department and assist the principal with academic planning and expertise oversight. </li>
                 <li>Maintained a safe, supportive, and disciplined school environment. </li>
                 <li>Coordinated school activities and daily academic operations.</li>
                 <li>Founded an ICT & STEM Club and conducted weekly coding sessions. </li>
@@ -322,45 +338,120 @@
           </div>
         </div>
 
-        <!-- Tab 2: CURRICULUM & PEDAGOGY -->
-        <div id="content-curriculum" class="tab-pane hidden space-y-6">
-          <div class="border-b border-slate-200 pb-4">
-            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Structured Pedagogical Framework</h2>
-            <p class="text-sm text-slate-500 mt-1">A scaffolded, 3-phase curriculum designed to move learners from visual intuition to production syntax.</p>
+        <!-- Tab 2: EXPERTISE (Content like 182 + Style like 183) -->
+        <div id="content-expertise" class="tab-pane hidden space-y-10">
+          
+          <!-- Section Header -->
+          <div class="border-b border-slate-200 pb-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-brand-50 border border-brand-200 text-brand-700 mb-2">
+              <span>⚙️</span> NEP 2020 Aligned Pedagogy
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Domain Competencies & Taught Curriculum</h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">A Half Decade of Proven Delivery: Bridging Theoretical Computer Science with Hands-On, Project-Driven Execution.</p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="p-6 bg-white rounded-xl border border-slate-200">
-              <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 font-mono font-bold text-sm flex items-center justify-center mb-3">01</div>
-              <h3 class="font-bold text-slate-900 text-base">Visual Logic & Tracing</h3>
-              <p class="text-xs font-semibold text-slate-500 mt-0.5">Primary & Middle Grades</p>
-              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-                Eliminates syntax intimidation through block-based frameworks (Scratch, PictoBlocks). Introduces state management, loops, and modular algorithmic flowcharts.
-              </p>
-            </div>
+          <!-- PART 1: Skills & Curricular Tools -->
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              
+              <!-- Languages -->
+              <div class="neon-glow-card p-5 bg-white rounded-xl shadow-sm space-y-2">
+                <span class="text-[11px] font-mono font-bold text-blue-600 uppercase tracking-wider block">Programming Languages</span>
+                <h5 class="text-sm font-bold text-slate-900">Web Development (HTML5, CSS3, Java Script), Python, C</h5>
+                <p class="text-[11px] text-slate-500 font-mono pt-1">Syntax execution & web structure</p>
+              </div>
 
-            <div class="p-6 bg-white rounded-xl border border-slate-200">
-              <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-700 font-mono font-bold text-sm flex items-center justify-center mb-3">02</div>
-              <h3 class="font-bold text-slate-900 text-base">Structured Python & Data</h3>
-              <p class="text-xs font-semibold text-slate-500 mt-0.5">Middle to Secondary Grades</p>
-              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-                Translates logic models into clean, PEP-8 compliant Python. Emphasizes lists, dictionaries, conditionals, file handling, and terminal problem-solving.
-              </p>
-            </div>
+              <!-- Visual Code -->
+              <div class="neon-glow-card p-5 bg-white rounded-xl shadow-sm space-y-2">
+                <span class="text-[11px] font-mono font-bold text-emerald-600 uppercase tracking-wider block">Block Based Programming</span>
+                <h5 class="text-sm font-bold text-slate-900">Scratch, Code.org, PictoBlocks, MakeCode, mBlocks, MIT App Inventor, Edublock</h5>
+                <p class="text-[11px] text-slate-500 font-mono pt-1">Event blocks, loops & games</p>
+              </div>
 
-            <div class="p-6 bg-white rounded-xl border border-slate-200">
-              <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 font-mono font-bold text-sm flex items-center justify-center mb-3">03</div>
-              <h3 class="font-bold text-slate-900 text-base">Web Development & AI Foundations</h3>
-              <p class="text-xs font-semibold text-slate-500 mt-0.5">Senior Secondary & Capstone</p>
-              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-                Hands-on HTML5/CSS3 layout design, basic DOM scripting, machine learning concepts, and critical digital citizenship and safety principles.
-              </p>
+              <!-- Pedagogy -->
+              <div class="neon-glow-card p-5 bg-white rounded-xl shadow-sm space-y-2">
+                <span class="text-[11px] font-mono font-bold text-purple-600 uppercase tracking-wider block">CBSE Subjects</span>
+                <h5 class="text-sm font-bold text-slate-900">Artificial Intelligence (Classes : 9-10)</h5>
+                <p class="text-[11px] text-slate-500 font-mono pt-1">Integration of Theory and Practical </p>
+              </div>
+
+              <!-- Teaching Area -->
+              <div class="neon-glow-card p-5 bg-white rounded-xl shadow-sm space-y-2">
+                <span class="text-[11px] font-mono font-bold text-amber-600 uppercase tracking-wider block">Teaching Area</span>
+                <h5 class="text-sm font-bold text-slate-900">Clasess : 6-12 </h5>
+                <p class="text-[11px] text-slate-500 font-mono pt-1">class and Lab management</p>
+              </div>
+
+            </div>
+          
+
+          <!-- PART 2: Pedagogical Framework -->
+          <div class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Pedagogical Framework</h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">The course in computer science prepares students to develop capability in critical and creative thinking as they imagine, generate, develop, produce 
+and critically evaluate ideas by engaging in systems, design and computational thinking.</p>
+          
+          <div class="space-y-4 pt-4 border-t border-slate-200">       
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+              
+              <!-- Card 1 -->
+              <div class="neon-glow-card p-6 bg-white rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-600 font-mono font-bold text-base flex items-center justify-center mb-3">
+                    01
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900 leading-snug">Competency-Based Education</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed mt-2.5">
+                    Aligning the curriculum with defined learning outcomes to enhance the acquisition of skills.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-100 flex items-center gap-1.5 text-[11px] font-mono text-brand-600 font-semibold">
+                  <span>●</span> Concept Accessibility
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="neon-glow-card p-6 bg-white rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 font-mono font-bold text-base flex items-center justify-center mb-3">
+                    02
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900 leading-snug">Constructivism & Creation</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed mt-2.5">
+                    Replacing rote syntax lectures with tactile code modification. Students start modifying working scripts and testing outputs from the first 15 minutes.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-100 flex items-center gap-1.5 text-[11px] font-mono text-indigo-600 font-semibold">
+                  <span>●</span> Active Project Building
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="neon-glow-card p-6 bg-white rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 font-mono font-bold text-base flex items-center justify-center mb-3">
+                    03
+                  </div>
+                  <h4 class="text-base font-bold text-slate-900 leading-snug">Inquiry-Based Learning:</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed mt-2.5">
+                    Encouraging inquiry, objectivity, and creativity to nurture a scientific temper.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-100 flex items-center gap-1.5 text-[11px] font-mono text-emerald-600 font-semibold">
+                  <span>●</span> Resilience & Logic
+                </div>
+              </div>
+
             </div>
           </div>
+          </div>
+
+          
+
         </div>
 
-        <!-- Tab 3: CREDENTIALS -->
-        <div id="content-credentials" class="tab-pane hidden space-y-6">
+        <!-- Tab 3: qualification -->
+        <div id="content-qualification" class="tab-pane hidden space-y-6">
           <div class="border-b border-slate-200 pb-4">
             <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Academic Degrees & Professional Certifications</h2>
             <p class="text-sm text-slate-500 mt-1">Formal qualifications verified for CBSE and institutional regulatory compliance.</p>
@@ -368,36 +459,50 @@
 
           <div class="grid sm:grid-cols-2 gap-4">
             <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
-              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">🎓</div>
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">🛡️</div>
               <div>
-                <h4 class="font-bold text-slate-900 text-sm">Master of Science: Computer Science (M.Sc. CS)</h4>
-                <p class="text-xs text-slate-500 mt-1">Post-graduate level mastery of computational theory, database architecture, and network engineering.</p>
+                <h4 class="font-bold text-slate-900 text-sm">Bachelar of Computer Application (BCA)</h4>
+                <p class="text-xs text-slate-500 mt-1"> Brain Institute of Information Technology Chhatarpur.</p>
               </div>
             </div>
 
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">🎓</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Master of Science: Computer Science (M.Sc. (CS))</h4>
+                <p class="text-xs text-slate-500 mt-1">Brain Institute of Information Technology Chhatarpur.</p>
+              </div>
+
+            </div>
+              <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">📑</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Bachelor of Education (B.Ed.)</h4>
+                <p class="text-xs text-slate-500 mt-1"> Vidyawati Shiksha Mahavidyalaya Chhatarpur</p>
+              </div>
+            </div>
             <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
               <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">💡</div>
               <div>
-                <h4 class="font-bold text-slate-900 text-sm">Google & EdTech Certified</h4>
-                <p class="text-xs text-slate-500 mt-1">Classroom digital tools, cloud workflows, and pedagogical integrations for hybrid classrooms.</p>
+                <h4 class="font-bold text-slate-900 text-sm">Google Certified Educator Level 1 & 2</h4>
+                <p class="text-xs text-slate-500 mt-1"></p>
+              </div>
+            </div>
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">💡</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Codigal Certified Coding Instructor</h4>
+                <p class="text-xs text-slate-500 mt-1"></p>
+              </div>
+            </div>
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
+              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">💡</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm"> CBSE Trained AI Educator</h4>
+                <p class="text-xs text-slate-500 mt-1"></p>
               </div>
             </div>
 
-            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
-              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">🛡️</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">POSH & Student Safeguarding</h4>
-                <p class="text-xs text-slate-500 mt-1">Compliant with institutional conduct standards, child safety frameworks, and lab ergonomics.</p>
-              </div>
-            </div>
-
-            <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-4">
-              <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-brand-600 font-bold text-lg">📑</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">Curriculum & Manuscript Review</h4>
-                <p class="text-xs text-slate-500 mt-1">Experience assessing K-8 computer science textbooks for pedagogical rigor and NEP compliance.</p>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -432,15 +537,15 @@
         <!-- Tab 5: CONTACT -->
         <div id="content-contact" class="tab-pane hidden space-y-6">
           <div class="border-b border-slate-200 pb-4">
-            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Institutional & Recruiter Inquiries</h2>
-            <p class="text-sm text-slate-500 mt-1">Open to Senior CS Educator, HOD Computer Science, and Curriculum Consultancy opportunities.</p>
+            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Open for Profiles</h2>
+            <p class="text-sm text-slate-500 mt-1">Open to PGT CS / ICT Educator, Leadership Positions.</p>
           </div>
 
           <div class="grid sm:grid-cols-2 gap-4 max-w-3xl">
             <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl">
-              <span class="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider block">Institutional Email</span>
-              <a href="mailto:rahul.agrawal@example.com" class="text-base font-bold text-brand-600 hover:underline block mt-2">
-                rahul.agrawal@example.com
+              <span class="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider block">Personal Email</span>
+              <a href="mailto:rahulcikv@gamil.com" class="text-base font-bold text-brand-600 hover:underline block mt-2">
+                rahulcikv@gamil.com
               </a>
               <p class="text-xs text-slate-500 mt-1">Available for school interviews and demo class coordination.</p>
             </div>
@@ -448,9 +553,9 @@
             <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl">
               <span class="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider block">Professional Networking</span>
               <a href="https://linkedin.com" target="_blank" rel="noopener" class="text-base font-bold text-brand-600 hover:underline block mt-2">
-                linkedin.com/in/rahul-agrawal
+                linkedin.com/in/rahul-agrawal-ai
               </a>
-              <p class="text-xs text-slate-500 mt-1">Connect for academic references and credentials.</p>
+              <p class="text-xs text-slate-500 mt-1">Connect for academic references and qualification.</p>
             </div>
           </div>
         </div>
@@ -489,7 +594,7 @@
         <div class="space-y-4 text-xs leading-relaxed text-slate-600">
           <div>
             <h4 class="font-bold text-slate-900 uppercase font-mono tracking-wider mb-1">Executive Summary</h4>
-            <p>Computer Science Educator with 5+ years of experience across CBSE schools. Specialized in NEP 2020 curriculum development, computer lab administration, and interactive coding instruction across middle and secondary divisions.</p>
+            <p>Computer Science Educator with 5+ years of experience across CBSE schools. Specialized in NEP 2020 expertise development, computer lab administration, and interactive coding instruction across middle and secondary divisions.</p>
           </div>
 
           <div>
@@ -497,7 +602,7 @@
             <div class="space-y-2">
               <div>
                 <span class="font-bold text-slate-900">Computer Science Faculty</span> — Birla Open Minds International School
-                <p class="text-slate-500">Delivered CBSE curriculum, managed 40+ system IT laboratory, organized coding challenges.</p>
+                <p class="text-slate-500">Delivered CBSE expertise, managed 40+ system IT laboratory, organized coding challenges.</p>
               </div>
               <div>
                 <span class="font-bold text-slate-900">Senior Coding Instructor</span> — Codingal Technologies
@@ -517,7 +622,7 @@
   
   <!-- Footer -->
   <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs font-mono text-slate-500 mt-10">
-    © Rahul Agrawal, M.Sc. (CS) • Lead Computer Science Educator • Hosted on GitHub Pages
+    © Rahul Agrawal • Computer Science Educator 
   </footer>
 
   <!-- Scripts -->
@@ -532,8 +637,8 @@
 
       const titles = {
         'leadership': 'PORTAL // INSTITUTIONAL TENURE & APPOINTMENTS',
-        'curriculum': 'PORTAL // CURRICULUM ARCHITECTURE & NEP PEDAGOGY',
-        'credentials': 'PORTAL // ACADEMIC QUALIFICATIONS & CERTIFICATIONS',
+        'expertise': 'PORTAL // INSTRUCTIONAL SPECTRUM & CORE CURRICULUM',
+        'qualification': 'PORTAL // ACADEMIC QUALIFICATIONS & CERTIFICATIONS',
         'vision': 'PORTAL // NEP 2020 VISION & IMPLEMENTATION',
         'contact': 'PORTAL // INSTITUTIONAL INQUIRIES & CONTACT'
       };
